@@ -1,3 +1,5 @@
+Telepath Phone is based on Linphone.
+
 Linphone is an open source app offering free audio/video calls and text messaging. With Linphone, you can be reachable at any time, even if the app is closed, with a WiFi or 3G/4G internet connection.
 
 Linphone key features:

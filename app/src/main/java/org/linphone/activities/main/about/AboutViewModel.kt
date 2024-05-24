@@ -20,10 +20,13 @@
 package org.linphone.activities.main.about
 
 import androidx.lifecycle.ViewModel
+import org.linphone.BuildConfig
 import org.linphone.LinphoneApplication.Companion.coreContext
 
 class AboutViewModel : ViewModel() {
     val appVersion: String = coreContext.appVersion
 
     val sdkVersion: String = coreContext.sdkVersion
+
+    val tpVersion: String = BuildConfig.VERSION_CODE.toString()
 }

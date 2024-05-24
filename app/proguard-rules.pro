@@ -39,3 +39,8 @@
 -dontwarn org.conscrypt.**
 -dontwarn org.bouncycastle.**
 -dontwarn org.openjsse.**
+-dontwarn com.google.protobuf.ExtensionRegistryLite
+-dontwarn com.google.protobuf.GeneratedMessageLite
+-dontwarn com.google.protobuf.Internal$ProtobufList
+-dontwarn com.google.protobuf.MapFieldLite
+-dontwarn com.google.protobuf.MessageLiteOrBuilder

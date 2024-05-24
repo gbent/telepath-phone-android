@@ -110,9 +110,9 @@
                         android:layout_gravity="center"
                         android:gravity="center"
                         android:paddingTop="20dp"
+                        android:text="@{String.format(@string/about_version, viewModel.tpVersion, viewModel.appVersion)}"
                         android:textColorLink="?attr/secondaryTextColor"
-                        android:textIsSelectable="true"
-                        android:text="@{String.format(@string/about_version, viewModel.appVersion)}" />
+                        android:textIsSelectable="true" />
 
                     <TextView
                         style="@style/about_version_font"

@@ -1,1 +1,1 @@
-Linphone - open source SIP client
+Telepath Phone - open source SIP client based on Linphone

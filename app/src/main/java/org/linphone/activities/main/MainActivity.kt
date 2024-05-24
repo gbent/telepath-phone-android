@@ -352,8 +352,11 @@ class MainActivity : GenericActivity(), SnackBarActivity, NavController.OnDestin
                         }
                     } else {
                         val stringUri = uri.toString()
-                        if (stringUri.startsWith("linphone-config:")) {
-                            val remoteConfigUri = stringUri.substring("linphone-config:".length)
+                        if (stringUri.startsWith("telepath-config:") || stringUri.contains(
+                                "/lp/provision"
+                            )
+                        ) {
+                            val remoteConfigUri = stringUri.replace("telepath-config:", "")
                             if (corePreferences.autoRemoteProvisioningOnConfigUriHandler) {
                                 Log.w(
                                     "[Main Activity] Remote provisioning URL set to [$remoteConfigUri], restarting Core now"
